@@ -75,13 +75,13 @@ class Tree:
         return self.search_node(self.root, search)
 
             
-tree = Tree("Luis")
-tree.add_public("María José")
-tree.add_public("Maggie")
-tree.add_public("Leon")
+tree = Tree("Leo")
+tree.add_public("Amelia")
+tree.add_public("Caro")
+tree.add_public("Nat")
 tree.add_public("Cuphead")
-tree.add_public("Aloy")
-tree.add_public("Jack")
+tree.add_public("Ortiz")
+tree.add_public("Dani")
 tree.in_order_public()
 tree.postorder_public()
 # Search
