@@ -75,17 +75,17 @@ class Tree:
         return self.search_node(self.root, search)
 
             
-tree = Tree("Leo")
-tree.add_public("Amelia")
-tree.add_public("Caro")
-tree.add_public("Nat")
-tree.add_public("Cuphead")
-tree.add_public("Ortiz")
-tree.add_public("Dani")
+tree = Tree(1)
+tree.add_public(42)
+tree.add_public(90)
+tree.add_public(12)
+tree.add_public(34)
+tree.add_public(5)
+tree.add_public(7)
 tree.in_order_public()
 tree.postorder_public()
 # Search
-searched = input("Search for something: ")
+searched = int(input("Search for something: "))
 node = tree.search_public(searched)
 if node is None:
     print(f"{searched} does not exist")
