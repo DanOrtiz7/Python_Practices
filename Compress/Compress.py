@@ -1,6 +1,6 @@
 def compress(word):
     i = 0
-    
+    list=[]
     while( i < len(word)) :
         count = 1
         while word[i] == word[i - 1] :
@@ -9,9 +9,10 @@ def compress(word):
             if i  == len(word):
                 break
          
-        print(str(word[i]) + str(count),  
-                          end = " ")
+        node= (str(word[i]) + str(count))
+        list.append(node)
         i += 1
+    print(list)
     print()
 
 compress("cool")
